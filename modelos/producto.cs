@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace modelos
 {
-    internal class producto
+    public class producto
     {
         string titulo { get; set; }
         float precio { get; set; }

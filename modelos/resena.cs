@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace modelos
 {
-    internal class resena
+    public class resena
     {
 
         string nombre { get; set; }

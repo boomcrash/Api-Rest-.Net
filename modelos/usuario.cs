@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace modelos
 {
-    internal class usuario
+    public class usuario
     {
-        string _usuario { get; set; }
-        string contrasena { get; set; }
-        int rol { get; set; }
+        string ? idUsuario { get; set; }
+        string ? _usuario { get; set; }
+        string ? contrasena { get; set; }
+        int ? rol { get; set; }
     }
     
 }

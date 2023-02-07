@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace modelos
 {
-    internal class carrito
+    public class carrito
     {
         float total { get; set; }
 

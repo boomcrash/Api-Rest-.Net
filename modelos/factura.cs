@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace modelos
 {
-    internal class factura
+    public class factura
     {
         string fecha { get; set; }
         int carritoId { get; set; }
