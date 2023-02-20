@@ -1,0 +1,12 @@
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\bin\Debug\net6.0\modelos.deps.json
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\bin\Debug\net6.0\modelos.dll
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\bin\Debug\net6.0\modelos.pdb
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.csproj.AssemblyReference.cache
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.AssemblyInfoInputs.cache
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.AssemblyInfo.cs
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.csproj.CoreCompileInputs.cache
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.dll
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\refint\modelos.dll
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.pdb
+C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\ref\modelos.dll
