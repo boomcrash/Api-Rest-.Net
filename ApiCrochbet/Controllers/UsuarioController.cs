@@ -11,45 +11,7 @@ namespace ApiCrochbet.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        [HttpPost("[action]")]
-        //[Route("verificar")]
-        public async Task<ActionResult<modelos.usuario>> getUserBd(modelos.usuario user)
-        {
-            
-
-            try
-            {
-                var cadenaConexion = new ConfigurationBuilder()
-               .AddJsonFile("appsettings.json")
-               .Build().GetSection("ConnectionStrings")["Conexion"];
-
-                string nameProcedure = "";
-
-                nameProcedure = NameStoreProcedure.SPconsultarUsuarios;
-                //user.idUsuario = id.ToString();
-                XDocument xml = Shared.DBXmlMethods.GetXml(user);
-                DataSet dsResultado = await Shared.DBXmlMethods
-                .EjecutaBase(NameStoreProcedure.SPUsuario, cadenaConexion, nameProcedure, xml.ToString());
-                
-                if (dsResultado.Tables.Count >= 0 || dsResultado.Tables[0].Rows.Count >= 0)
-                {
-                    string JSONstring = string.Empty;
-                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
-                    return Ok(JSONstring);
-                }
-                else
-                {
-                    return Ok();
-                }
-
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e);
-                return BadRequest();
-            }
-        }
-
+       
         // POST api/<UsuarioController>
         [HttpPost("[action]/{procedimiento}")]
         public async Task<ActionResult<modelos.usuario>> GetUsuarios(string procedimiento,modelos.usuario user, int? id=null)

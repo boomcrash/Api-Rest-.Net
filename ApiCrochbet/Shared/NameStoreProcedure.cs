@@ -20,6 +20,13 @@
         public const string SPeditarProveedor = "editarProveedor";
         public const string SPborrarProveedor = "borrarProveedor";
 
+        //resenas
+        public const string SPResena = "Resenas";
+        public const string SPconsultarResenas = "consultarResenas";
+        public const string SPinsertarResena = "insertarResena";
+        public const string SPeditarResena = "editarResena";
+        public const string SPborrarResena = "borrarResena";
+
     }
 }
 
