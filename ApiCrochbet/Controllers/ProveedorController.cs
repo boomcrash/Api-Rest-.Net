@@ -1,83 +1,55 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ApiCrochbet.Shared;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Data;
+using System.Xml.Linq;
 
 namespace ApiCrochbet.Controllers
 {
+    [Route("api/[controller]")]
     public class ProveedorController : Controller
     {
-        // GET: ProveedorController
-        public ActionResult Index()
-        {
-            return View();
-        }
 
-        // GET: ProveedorController/Details/5
-        public ActionResult Details(int id)
+        [HttpPost("[action]")]
+        //[Route("verificar")]
+        public async Task<ActionResult<modelos.proveedor>> getResenas(modelos.proveedor prov)
         {
-            return View();
-        }
 
-        // GET: ProveedorController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ProveedorController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
             try
             {
-                return RedirectToAction(nameof(Index));
+                var cadenaConexion = new ConfigurationBuilder()
+               .AddJsonFile("appsettings.json")
+               .Build().GetSection("ConnectionStrings")["Conexion"];
+
+                string nameProcedure = "";
+
+                nameProcedure = NameStoreProcedure.SPconsultarProveedores;
+                //user.idUsuario = id.ToString();
+                XDocument xml = Shared.DBXmlMethods.GetXml(prov);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPProveedor, cadenaConexion, nameProcedure, xml.ToString());
+
+                if (dsResultado.Tables.Count >= 0 || dsResultado.Tables[0].Rows.Count >= 0)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
+                    return Ok(JSONstring);
+                }
+                else
+                {
+                    return Ok();
+                }
+
             }
-            catch
+            catch (Exception e)
             {
-                return View();
+                Console.WriteLine(e);
+                return BadRequest();
             }
         }
 
-        // GET: ProveedorController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        
 
-        // POST: ProveedorController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ProveedorController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ProveedorController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
