@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ApiCrochbet.Shared;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Data;
+using System.Xml.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +12,42 @@ namespace ApiCrochbet.Controllers
     [ApiController]
     public class ProductoController : ControllerBase
     {
-        // GET: api/<ProductoController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpPost("[action]")]
+        public async Task<ActionResult<modelos.producto>> getUserBd(modelos.producto user)
         {
-            return new string[] { "value1", "value2" };
-        }
 
-        // GET api/<ProductoController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+            try
+            {
+                var cadenaConexion = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build().GetSection("ConnectionStrings")["Conexion"];
 
-        // POST api/<ProductoController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+                string nameProcedure = "";
+                nameProcedure = NameStoreProcedure.SPconsultarProductos;
 
-        // PUT api/<ProductoController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+                //user.idUsuario = id.ToString(); -- PARAMETRO
+                XDocument xml = Shared.DBXmlMethods.GetXml(user);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPProducto, cadenaConexion, nameProcedure, xml.ToString());
 
-        // DELETE api/<ProductoController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+                if (dsResultado.Tables.Count >= 0 || dsResultado.Tables[0].Rows.Count >= 0)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
+                    return Ok(JSONstring);
+                }
+                else
+                {
+                    return Ok();
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest();
+            }
+
         }
     }
 }
