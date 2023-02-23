@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1af3016e-ce87-43ca-8377-2afa4c96563d": {
+      "ProjectGuid": "1af3016e-ce87-43ca-8377-2afa4c96563d",
+      "DisplayName": "modelos",
+      "ColorIndex": 0
+    },
+    "8d251382-a85c-4a6c-b7e0-8ab331c59955": {
+      "ProjectGuid": "8d251382-a85c-4a6c-b7e0-8ab331c59955",
+      "DisplayName": "ApiCrochbet",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

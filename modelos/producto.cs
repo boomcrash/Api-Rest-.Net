@@ -8,13 +8,13 @@ namespace modelos
 {
     public class producto
     {
-        int ? IdProducto { get; set; }
-        string ? titulo { get; set; }
-        float ? precio { get; set; }
-        string ? imagen { get; set; }
-        string ? descripcion { get; set; }
-        string ? categoria { get; set; }
-        int ? proveedorId { get; set; }
+        public int ? idProducto { get; set; }
+        public string? titulo { get; set; }
+        public float? precio { get; set; }
+        public string? imagen { get; set; }
+        public string? descripcion { get; set; }
+        public string? categoria { get; set; }
+        public int? proveedorId { get; set; }
 
     }
 }

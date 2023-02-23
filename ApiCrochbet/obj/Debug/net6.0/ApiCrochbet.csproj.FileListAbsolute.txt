@@ -34,3 +34,39 @@ C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\ApiCrochbet\o
 C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.genruntimeconfig.cache
 C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ref\ApiCrochbet.dll
 C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\ApiCrochbet.exe
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\ApiCrochbet.deps.json
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\ApiCrochbet.runtimeconfig.json
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\ApiCrochbet.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\ref\ApiCrochbet.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\ApiCrochbet.pdb
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\modelos.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\bin\Debug\net6.0\modelos.pdb
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.csproj.AssemblyReference.cache
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.AssemblyInfoInputs.cache
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.AssemblyInfo.cs
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\scopedcss\bundle\ApiCrochbet.styles.css
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.csproj.CopyComplete
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ref\ApiCrochbet.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.pdb
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\ApiCrochbet\obj\Debug\net6.0\ApiCrochbet.genruntimeconfig.cache

@@ -30,8 +30,8 @@
         public const string SPborrarCliente = "borrarCliente";
 
         //productos
-        public const string SPProducto = "clientes";
-        public const string SPconsultarProductos = "consultarProductos";
+        public const string SPProducto = "productos";
+        public const string SPconsultarProductos = "consultarProducto";
         public const string SPverificarProductos = "verificarProductos";
         public const string SPverificarProductoId = "verificarProductoId";
         public const string SPinsertarProducto = "insertarProducto";
