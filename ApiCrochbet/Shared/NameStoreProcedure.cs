@@ -20,6 +20,24 @@
         public const string SPeditarProveedor = "editarProveedor";
         public const string SPborrarProveedor = "borrarProveedor";
 
+        //clientes
+        public const string SPCliente = "clientes";
+        public const string SPconsultarClientes = "consultarClientes";
+        public const string SPverificarClientes = "verificarClientes";
+        public const string SPverificarClienteId = "verificarClienteId";
+        public const string SPinsertarCliente = "insertarCliente";
+        public const string SPeditarCliente = "editarCliente";
+        public const string SPborrarCliente = "borrarCliente";
+
+        //productos
+        public const string SPProducto = "productos";
+        public const string SPconsultarProductos = "consultarProducto";
+        public const string SPverificarProductos = "verificarProductos";
+        public const string SPverificarProductoId = "verificarProductoId";
+        public const string SPinsertarProducto = "insertarProducto";
+        public const string SPeditarProducto = "editarProducto";
+        public const string SPborrarProducto = "borrarProducto";
+
     }
 }
 

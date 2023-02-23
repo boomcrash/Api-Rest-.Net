@@ -10,3 +10,15 @@ C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\D
 C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\refint\modelos.dll
 C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.pdb
 C:\Users\GAMER\Desktop\Carpetas Escritorio\PROYECTOS\Api-Rest-.Net\modelos\obj\Debug\net6.0\ref\modelos.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\bin\Debug\net6.0\modelos.deps.json
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\bin\Debug\net6.0\modelos.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\bin\Debug\net6.0\ref\modelos.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\bin\Debug\net6.0\modelos.pdb
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.csproj.AssemblyReference.cache
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.AssemblyInfoInputs.cache
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.AssemblyInfo.cs
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\ref\modelos.dll
+C:\Users\User\Documents\BETSY ARLETTE SICHA VEGA\UG\S7\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\BACKEND CROCHBET\Api-Rest-.Net\modelos\obj\Debug\net6.0\modelos.pdb

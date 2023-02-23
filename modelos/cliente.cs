@@ -8,14 +8,14 @@ namespace modelos
 {
     public class cliente
     {
-
-        string nombre { get; set; }
-        string apellido { get; set; }
-        string ciudad { get; set; }
-        string direccion { get; set; }
-        string telefono { get; set; }
-        string correo { get; set; }
-        int usuarioId { get; set; }
+        public int? idCliente { get; set; }
+        public string? nombre { get; set; }
+        public string? apellido { get; set; }
+        public string? ciudad { get; set; }
+        public string? direccion { get; set; }
+        public string? telefono { get; set; }
+        public string? correo { get; set; }
+        public int? usuarioId { get; set; }
 
     }
 }
