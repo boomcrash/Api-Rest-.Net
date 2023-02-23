@@ -1,4 +1,4 @@
-﻿namespace ApiCrochbet.Shared
+namespace ApiCrochbet.Shared
 {
     public class NameStoreProcedure
     {
@@ -37,6 +37,13 @@
         public const string SPinsertarProducto = "insertarProducto";
         public const string SPeditarProducto = "editarProducto";
         public const string SPborrarProducto = "borrarProducto";
+
+        //resenas
+        public const string SPResena = "Resenas";
+        public const string SPconsultarResenas = "consultarResenas";
+        public const string SPinsertarResena = "insertarResena";
+        public const string SPeditarResena = "editarResena";
+        public const string SPborrarResena = "borrarResena";
 
     }
 }

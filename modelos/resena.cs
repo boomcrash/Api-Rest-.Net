@@ -8,12 +8,12 @@ namespace modelos
 {
     public class resena
     {
-
-        string nombre { get; set; }
-        string apellido { get; set; }
-        string email { get; set; }
-        string mensaje { get; set; }
-        int clienteId { get; set; }
+        public int? idResena { get; set; }
+        public string? nombre { get; set; }
+        public string? apellido { get; set; }
+        public string? email { get; set; }
+        public string? mensaje { get; set; }
+        public int? clienteId { get; set; }
         
     }
 }

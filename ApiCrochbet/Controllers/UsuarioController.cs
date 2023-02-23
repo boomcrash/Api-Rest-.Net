@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Xml.Linq;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ApiCrochbet.Controllers
@@ -11,45 +12,7 @@ namespace ApiCrochbet.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        [HttpPost("[action]")]
-        //[Route("verificar")]
-        public async Task<ActionResult<modelos.usuario>> getUserBd(modelos.usuario user)
-        {
-            
-
-            try
-            {
-                var cadenaConexion = new ConfigurationBuilder()
-               .AddJsonFile("appsettings.json")
-               .Build().GetSection("ConnectionStrings")["Conexion"];
-
-                string nameProcedure = "";
-
-                nameProcedure = NameStoreProcedure.SPconsultarUsuarios;
-                //user.idUsuario = id.ToString();
-                XDocument xml = Shared.DBXmlMethods.GetXml(user);
-                DataSet dsResultado = await Shared.DBXmlMethods
-                .EjecutaBase(NameStoreProcedure.SPUsuario, cadenaConexion, nameProcedure, xml.ToString());
-                
-                if (dsResultado.Tables.Count >= 0 || dsResultado.Tables[0].Rows.Count >= 0)
-                {
-                    string JSONstring = string.Empty;
-                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
-                    return Ok(JSONstring);
-                }
-                else
-                {
-                    return Ok();
-                }
-
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e);
-                return BadRequest();
-            }
-        }
-
+       
         // POST api/<UsuarioController>
         [HttpPost("[action]/{procedimiento}")]
         public async Task<ActionResult<modelos.usuario>> GetUsuarios(string procedimiento,modelos.usuario user, int? id=null)
@@ -60,8 +23,7 @@ namespace ApiCrochbet.Controllers
                 .AddJsonFile("appsettings.json")
                 .Build().GetSection("ConnectionStrings")["Conexion"];
 
-           
-            
+
             if (procedimiento == "verificarId")
             {
                 nameProcedure = NameStoreProcedure.SPverificarUsuarioId;
@@ -164,17 +126,126 @@ namespace ApiCrochbet.Controllers
             
         }
 
+
+        [HttpPost("[action]")]
+        //[Route("verificar")]
+        public async Task<ActionResult> addUsuarios([FromBody] modelos.usuario user)
+        {
+
+            try
+            {
+                var cadenaConexion = new ConfigurationBuilder()
+               .AddJsonFile("appsettings.json")
+               .Build().GetSection("ConnectionStrings")["Conexion"];
+
+                string nameProcedure = "";
+
+                nameProcedure = NameStoreProcedure.SPinsertarUsuario;
+                //user.idUsuario = id.ToString();
+                XDocument xml = Shared.DBXmlMethods.GetXml(user);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPProveedor, cadenaConexion, nameProcedure, xml.ToString());
+
+                if (dsResultado.Tables.Count >= 1 || dsResultado.Tables[1].Rows.Count >= 1)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[1]);
+                    JArray jsonArray = JArray.Parse(JSONstring);
+                    string column1Value = jsonArray[0]["Column1"].ToString();
+                    bool value = bool.Parse(column1Value);
+                    return Ok(value);
+                }
+                else
+                {
+                    return Ok(false);
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest(false);
+            }
+        }
+
         // PUT api/<UsuarioController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("[action]")]
+        public async Task<ActionResult> editUserPassword([FromBody] modelos.usuario user)
         {
             
+            try
+            {
+                var cadenaConexion = new ConfigurationBuilder()
+               .AddJsonFile("appsettings.json")
+               .Build().GetSection("ConnectionStrings")["Conexion"];
+
+                string nameProcedure = "";
+
+                nameProcedure = NameStoreProcedure.SPeditarUsuario;
+                XDocument xml = Shared.DBXmlMethods.GetXml(user);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPUsuario, cadenaConexion, nameProcedure, xml.ToString());
+
+                if (dsResultado.Tables.Count >= 1 || dsResultado.Tables[1].Rows.Count >= 1)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[1]);
+                    JArray jsonArray = JArray.Parse(JSONstring);
+                    string column1Value = jsonArray[0]["Column1"].ToString();
+                    bool value = bool.Parse(column1Value);
+                    return Ok(value);
+                }
+                else
+                {
+                    return Ok(false);
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest();
+            }
         }
 
         // DELETE api/<UsuarioController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("[action]")]
+        public async Task<ActionResult> deleteUser([FromBody] modelos.usuario user)
         {
+
+            try
+            {
+                var cadenaConexion = new ConfigurationBuilder()
+               .AddJsonFile("appsettings.json")
+               .Build().GetSection("ConnectionStrings")["Conexion"];
+
+                string nameProcedure = "";
+
+                nameProcedure = NameStoreProcedure.SPborrarUsuario;
+                XDocument xml = Shared.DBXmlMethods.GetXml(user);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPUsuario, cadenaConexion, nameProcedure, xml.ToString());
+
+                if (dsResultado.Tables.Count >= 1 || dsResultado.Tables[1].Rows.Count >= 1)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[1]);
+                    JArray jsonArray = JArray.Parse(JSONstring);
+                    string column1Value = jsonArray[0]["Column1"].ToString();
+                    bool value = bool.Parse(column1Value);
+                    return Ok(value);
+                }
+                else
+                {
+                    return Ok(false);
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest();
+            }
         }
     }
 }
