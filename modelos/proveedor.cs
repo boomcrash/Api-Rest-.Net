@@ -8,12 +8,12 @@ namespace modelos
 {
     public class proveedor
     {
-        string ? idProveedor { get; set; }
-        string ? nombre { get; set; }
-        string ? ruc { get; set; }
-        string ? telefono { get; set; }
-        string ? correo { get; set; }
-        string ? direccion { get; set; }
+        public string ? idProveedor { get; set; }
+        public string? nombre { get; set; }
+        public string? ruc { get; set; }
+        public string? telefono { get; set; }
+        public string? correo { get; set; }
+        public string? direccion { get; set; }
 
     }
 }

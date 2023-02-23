@@ -8,9 +8,9 @@ namespace modelos
 {
     public class carrito
     {
-        float total { get; set; }
+        public int idCarrito { get; set; }
+        public float total { get; set; }
 
-        List<producto> productos { get; set; }
-        int clienteId { get; set; }
+        public int clienteId { get; set; }
     }
 }
