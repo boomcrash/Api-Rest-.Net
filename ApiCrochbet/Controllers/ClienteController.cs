@@ -14,7 +14,7 @@ namespace ApiCrochbet.Controllers
     public class ClienteController : ControllerBase
     {
         [HttpPost("[action]")]
-        public async Task<ActionResult<modelos.cliente>> getClientBd(modelos.cliente client)
+        public async Task<ActionResult<modelos.cliente>> getClientes(modelos.cliente client)
         {
 
             try
@@ -40,6 +40,47 @@ namespace ApiCrochbet.Controllers
                 else
                 {
                     return Ok();
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest();
+            }
+
+        }
+
+
+        [HttpPost("[action]")]
+        public async Task<ActionResult<modelos.cliente>> getClienteByUserId(modelos.cliente client)
+        {
+
+            try
+            {
+                var cadenaConexion = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build().GetSection("ConnectionStrings")["Conexion"];
+
+                string nameProcedure = "";
+                nameProcedure = NameStoreProcedure.SPgetClienteByUserId;
+
+
+                XDocument xml = Shared.DBXmlMethods.GetXml(client);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPCliente, cadenaConexion, nameProcedure, xml.ToString());
+
+                if (dsResultado.Tables[0].Rows.Count > 0)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
+                    return Ok(JSONstring);
+                }
+                else
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(false);
+                    return Ok(JSONstring);
                 }
 
             }

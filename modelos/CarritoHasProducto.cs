@@ -8,7 +8,7 @@ namespace modelos
 {
     public class CarritoHasProducto
     {
-        int carritoId { get; set; }
-        int productoId { get; set; }
+        public int? carritoId { get; set; }
+        public int? productoId { get; set; }
     }
 }

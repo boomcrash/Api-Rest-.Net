@@ -72,7 +72,7 @@ namespace ApiCrochbet.Controllers
                         if (dsResultado.Tables[0].Rows.Count > 0)
                         {
                             string JSONstring = string.Empty;
-                            JSONstring = JsonConvert.SerializeObject(true);
+                            JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
                             return Ok(JSONstring);
                         }
                         else
@@ -144,7 +144,7 @@ namespace ApiCrochbet.Controllers
                 //user.idUsuario = id.ToString();
                 XDocument xml = Shared.DBXmlMethods.GetXml(user);
                 DataSet dsResultado = await Shared.DBXmlMethods
-                .EjecutaBase(NameStoreProcedure.SPProveedor, cadenaConexion, nameProcedure, xml.ToString());
+                .EjecutaBase(NameStoreProcedure.SPUsuario, cadenaConexion, nameProcedure, xml.ToString());
 
                 if (dsResultado.Tables.Count >= 1 || dsResultado.Tables[1].Rows.Count >= 1)
                 {

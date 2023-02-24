@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj": {}
+    "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj": {
+    "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj",
+        "projectUniqueName": "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj",
         "projectName": "ApiCrochbet",
-        "projectPath": "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\ApiCrochbet\\obj\\",
+        "projectPath": "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\ApiCrochbet\\ApiCrochbet.csproj",
+        "packagesPath": "C:\\Users\\GAMER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\ApiCrochbet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GAMER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\modelos\\modelos.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\modelos\\modelos.csproj"
+              "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\modelos\\modelos.csproj": {
+                "projectPath": "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\modelos\\modelos.csproj"
               }
             }
           }
@@ -75,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\modelos\\modelos.csproj": {
+    "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\modelos\\modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\modelos\\modelos.csproj",
+        "projectUniqueName": "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\modelos\\modelos.csproj",
         "projectName": "modelos",
-        "projectPath": "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\modelos\\modelos.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\BETSY ARLETTE SICHA VEGA\\UG\\S7\\DESARROLLO DE APLICACIONES WEB AVANZADO (7-1)\\BACKEND CROCHBET\\Api-Rest-.Net\\modelos\\obj\\",
+        "projectPath": "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\modelos\\modelos.csproj",
+        "packagesPath": "C:\\Users\\GAMER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GAMER\\Desktop\\Carpetas Escritorio\\PROYECTOS\\Api-Rest-.Net\\modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GAMER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -129,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

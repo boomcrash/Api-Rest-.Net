@@ -8,7 +8,7 @@ namespace modelos
 {
     public class factura
     {
-        string fecha { get; set; }
-        int carritoId { get; set; }
+        public string? fecha { get; set; }
+        public int? carritoId { get; set; }
     }
 }

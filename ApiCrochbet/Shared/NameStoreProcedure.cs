@@ -23,8 +23,7 @@ namespace ApiCrochbet.Shared
         //clientes
         public const string SPCliente = "clientes";
         public const string SPconsultarClientes = "consultarClientes";
-        public const string SPverificarClientes = "verificarClientes";
-        public const string SPverificarClienteId = "verificarClienteId";
+        public const string SPgetClienteByUserId = "consultarClienteByUserId";
         public const string SPinsertarCliente = "insertarCliente";
         public const string SPeditarCliente = "editarCliente";
         public const string SPborrarCliente = "borrarCliente";
@@ -39,11 +38,31 @@ namespace ApiCrochbet.Shared
         public const string SPborrarProducto = "borrarProducto";
 
         //resenas
-        public const string SPResena = "Resenas";
+        public const string SPResena = "resenas";
         public const string SPconsultarResenas = "consultarResenas";
         public const string SPinsertarResena = "insertarResena";
         public const string SPeditarResena = "editarResena";
         public const string SPborrarResena = "borrarResena";
+
+
+        //carrito
+        public const string SPCarrito= "carritos";
+        public const string SPconsultarItems = "consultarItemsCarrito";
+        public const string SPconsultarTotalCarrito = "consultarTotalCarrito";
+        public const string SPinsertarItems = "insertarItemCarrito";
+        public const string SPsacarItems = "sacarItemCarrito";
+        public const string SPcrearCarrito = "crearCarrito";
+        public const string SPborrarCarrito = "borrarCarrito";
+        public const string SPgetCarritoByClientId = "consultarCarritoByClientId";
+
+
+
+        //factura
+        public const string SPFactura = "facturas";
+        public const string SPconsultarFacturas = "consultarFacturas";
+        public const string SPcrearFactura = "crearFactura";
+        public const string SPgetFacturaByClient = "consultarFacturasByClientId";
+        public const string SPgetFacturaByCar = "consultarItemsFacturaByCarritoId";
 
     }
 }
