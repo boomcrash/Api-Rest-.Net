@@ -14,7 +14,7 @@ namespace ApiCrochbet.Controllers
     public class ProductoController : ControllerBase
     {
         [HttpPost("[action]")]
-        public async Task<ActionResult<modelos.producto>> getProductoBd(modelos.producto product)
+        public async Task<ActionResult<modelos.producto>> getProductos(modelos.producto product)
         {
 
             try
