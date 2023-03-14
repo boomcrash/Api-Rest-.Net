@@ -52,6 +52,46 @@ namespace ApiCrochbet.Controllers
         }
 
 
+
+        [HttpPost("[action]")]
+        public async Task<ActionResult<modelos.producto>> getProductosCategories(modelos.producto product)
+        {
+
+            try
+            {
+                var cadenaConexion = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build().GetSection("ConnectionStrings")["Conexion"];
+
+                string nameProcedure = "";
+                nameProcedure = NameStoreProcedure.SPconsultarProductoCategorias;
+
+                //product.idUsuario = id.ToString(); -- PARAMETRO
+                XDocument xml = Shared.DBXmlMethods.GetXml(product);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPProducto, cadenaConexion, nameProcedure, xml.ToString());
+
+                if (dsResultado.Tables.Count >= 0 || dsResultado.Tables[0].Rows.Count >= 0)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
+                    return Ok(JSONstring);
+                }
+                else
+                {
+                    return Ok();
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest();
+            }
+
+        }
+
+
         [HttpPost("[action]")]
         //[Route("verificar")]
         public async Task<ActionResult> addProductos([FromBody] modelos.producto product)

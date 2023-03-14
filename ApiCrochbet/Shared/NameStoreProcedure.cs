@@ -31,6 +31,7 @@ namespace ApiCrochbet.Shared
         //productos
         public const string SPProducto = "productos";
         public const string SPconsultarProductos = "consultarProducto";
+        public const string SPconsultarProductoCategorias = "consultarProductoCategorias";
         public const string SPverificarProductos = "verificarProductos";
         public const string SPverificarProductoId = "verificarProductoId";
         public const string SPinsertarProducto = "insertarProducto";
