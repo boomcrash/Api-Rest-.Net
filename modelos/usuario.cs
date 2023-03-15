@@ -8,7 +8,7 @@ namespace modelos
 {
     public class usuario
     {
-        public string ? idUsuario { get; set; }       
+        public int ? idUsuario { get; set; }       
         public string? _usuario { get; set; }
         public string? contrasena { get; set; }
         public int? rol { get; set; }

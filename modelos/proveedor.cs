@@ -8,7 +8,7 @@ namespace modelos
 {
     public class proveedor
     {
-        public string ? idProveedor { get; set; }
+        public int ? idProveedor { get; set; }
         public string? nombre { get; set; }
         public string? ruc { get; set; }
         public string? telefono { get; set; }

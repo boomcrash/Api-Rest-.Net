@@ -29,7 +29,7 @@ namespace ApiCrochbet.Controllers
                 nameProcedure = NameStoreProcedure.SPverificarUsuarioId;
                 try
                 {
-                    user.idUsuario = id.ToString();
+                    user.idUsuario = id;
                     XDocument xml = Shared.DBXmlMethods.GetXml(user);
                     DataSet dsResultado = await Shared.DBXmlMethods
                     .EjecutaBase(NameStoreProcedure.SPUsuario, cadenaConexion, nameProcedure, xml.ToString());
