@@ -1,6 +1,7 @@
 ﻿using ApiCrochbet.Shared;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using modelos;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Data;
@@ -214,7 +215,7 @@ namespace ApiCrochbet.Controllers
 
 
 
-        [HttpDelete("[action]")]
+        [HttpPost("[action]")]
         //[Route("verificar")]
         public async Task<ActionResult> deleteOneItem([FromBody] modelos.CarritoHasProducto car)
         {
@@ -258,9 +259,9 @@ namespace ApiCrochbet.Controllers
 
 
 
-        [HttpDelete("[action]")]
+        [HttpDelete("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult> deleteAllItems([FromBody] modelos.CarritoHasProducto car)
+        public async Task<ActionResult> deleteAllItems(int id)
         {
 
             try
@@ -272,6 +273,8 @@ namespace ApiCrochbet.Controllers
                 string nameProcedure = "";
 
                 nameProcedure = NameStoreProcedure.SPborrarCarrito;
+                CarritoHasProducto car = new CarritoHasProducto();
+                car.carritoId=id;
                 //product.idUsuario = id.ToString();
                 XDocument xml = Shared.DBXmlMethods.GetXml(car);
                 DataSet dsResultado = await Shared.DBXmlMethods

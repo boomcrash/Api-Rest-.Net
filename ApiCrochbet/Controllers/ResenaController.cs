@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System.Data;
 using System.Xml.Linq;
 using Newtonsoft.Json.Linq;
+using modelos;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ApiCrochbet.Controllers
@@ -142,7 +143,7 @@ namespace ApiCrochbet.Controllers
 
         [HttpDelete("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult> deleteResenas([FromBody] modelos.resena res,int id)
+        public async Task<ActionResult> deleteResenas(int id)
         {
 
             try
@@ -152,6 +153,7 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
+                resena res = new resena();
                 res.idResena = id;
                 nameProcedure = NameStoreProcedure.SPborrarResena;
                 //user.idUsuario = id.ToString();

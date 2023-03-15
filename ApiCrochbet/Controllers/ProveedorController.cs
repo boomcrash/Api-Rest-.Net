@@ -1,6 +1,7 @@
 ﻿using ApiCrochbet.Shared;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using modelos;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Data;
@@ -12,9 +13,9 @@ namespace ApiCrochbet.Controllers
     public class ProveedorController : Controller
     {
 
-        [HttpPost("[action]/{id}")]
+        [HttpPost("[action]")]
         //[Route("verificar")]
-        public async Task<ActionResult<modelos.proveedor>> getProveedores(modelos.proveedor prov,int id)
+        public async Task<ActionResult<modelos.proveedor>> getProveedores(modelos.proveedor prov)
         {
 
             try
@@ -24,7 +25,6 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
-                prov.idProveedor = id;
                 nameProcedure = NameStoreProcedure.SPconsultarProveedores;
                 //user.idUsuario = id.ToString();
                 XDocument xml = Shared.DBXmlMethods.GetXml(prov);
@@ -139,9 +139,9 @@ namespace ApiCrochbet.Controllers
 
 
 
-        [HttpDelete("[action]")]
+        [HttpDelete("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult> deleteProveedores([FromBody] modelos.proveedor prov)
+        public async Task<ActionResult> deleteProveedores(int id)
         {
 
             try
@@ -154,6 +154,8 @@ namespace ApiCrochbet.Controllers
 
                 nameProcedure = NameStoreProcedure.SPborrarProveedor;
                 //user.idUsuario = id.ToString();
+                proveedor prov = new proveedor();
+                prov.idProveedor = id;
                 XDocument xml = Shared.DBXmlMethods.GetXml(prov);
                 DataSet dsResultado = await Shared.DBXmlMethods
                 .EjecutaBase(NameStoreProcedure.SPProveedor, cadenaConexion, nameProcedure, xml.ToString());

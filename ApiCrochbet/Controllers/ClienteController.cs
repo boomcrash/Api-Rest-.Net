@@ -1,5 +1,6 @@
 ﻿using ApiCrochbet.Shared;
 using Microsoft.AspNetCore.Mvc;
+using modelos;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Data;
@@ -181,7 +182,7 @@ namespace ApiCrochbet.Controllers
 
         [HttpDelete("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult> deleteClientes([FromBody] modelos.cliente client,int id)
+        public async Task<ActionResult> deleteClientes( int id)
         {
 
             try
@@ -191,6 +192,7 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
+                cliente client = new cliente();
                 client.idCliente = id;
                 nameProcedure = NameStoreProcedure.SPborrarCliente;
                 //product.idUsuario = id.ToString();
