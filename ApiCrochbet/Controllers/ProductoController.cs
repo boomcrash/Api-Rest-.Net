@@ -51,6 +51,43 @@ namespace ApiCrochbet.Controllers
 
         }
 
+        [HttpPost("[action]")]
+        public async Task<ActionResult<modelos.producto>> getProveedorById(modelos.producto product)
+        {
+
+            try
+            {
+                var cadenaConexion = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build().GetSection("ConnectionStrings")["Conexion"];
+
+                string nameProcedure = "";
+                nameProcedure = NameStoreProcedure.SPverificarProveedorId;
+
+                //product.idUsuario = id.ToString(); -- PARAMETRO
+                XDocument xml = Shared.DBXmlMethods.GetXml(product);
+                DataSet dsResultado = await Shared.DBXmlMethods
+                .EjecutaBase(NameStoreProcedure.SPProducto, cadenaConexion, nameProcedure, xml.ToString());
+
+                if (dsResultado.Tables.Count >= 0 || dsResultado.Tables[0].Rows.Count >= 0)
+                {
+                    string JSONstring = string.Empty;
+                    JSONstring = JsonConvert.SerializeObject(dsResultado.Tables[0]);
+                    return Ok(JSONstring);
+                }
+                else
+                {
+                    return Ok();
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest();
+            }
+
+        }
 
 
         [HttpPost("[action]")]
@@ -179,9 +216,9 @@ namespace ApiCrochbet.Controllers
 
 
 
-        [HttpDelete("[action]")]
+        [HttpDelete("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult> deleteProductos([FromBody] modelos.producto product)
+        public async Task<ActionResult> deleteProductos([FromBody] modelos.producto product,int id )
         {
 
             try
@@ -191,7 +228,7 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
-
+                product.idProducto = id;
                 nameProcedure = NameStoreProcedure.SPborrarProducto;
                 //product.idUsuario = id.ToString();
                 XDocument xml = Shared.DBXmlMethods.GetXml(product);

@@ -15,7 +15,6 @@ namespace ApiCrochbet.Shared
         public const string SPProveedor = "proveedores";
         public const string SPconsultarProveedores = "consultarProveedores";
         public const string SPverificarProveedor = "verificarProveedor";
-        public const string SPverificarProveedorId = "verificarProveedorId";
         public const string SPinsertarProveedor = "insertarProveedor";
         public const string SPeditarProveedor = "editarProveedor";
         public const string SPborrarProveedor = "borrarProveedor";
@@ -37,6 +36,7 @@ namespace ApiCrochbet.Shared
         public const string SPinsertarProducto = "insertarProducto";
         public const string SPeditarProducto = "editarProducto";
         public const string SPborrarProducto = "borrarProducto";
+        public const string SPverificarProveedorId = "verificarProveedorId";
 
         //resenas
         public const string SPResena = "resenas";

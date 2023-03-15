@@ -209,8 +209,8 @@ namespace ApiCrochbet.Controllers
         }
 
         // DELETE api/<UsuarioController>/5
-        [HttpDelete("[action]")]
-        public async Task<ActionResult> deleteUser([FromBody] modelos.usuario user)
+        [HttpDelete("[action]/{id}")]
+        public async Task<ActionResult> deleteUser([FromBody] modelos.usuario user,int id)
         {
 
             try
@@ -220,7 +220,7 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
-
+                user.idUsuario = id;
                 nameProcedure = NameStoreProcedure.SPborrarUsuario;
                 XDocument xml = Shared.DBXmlMethods.GetXml(user);
                 DataSet dsResultado = await Shared.DBXmlMethods

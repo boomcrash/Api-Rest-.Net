@@ -140,9 +140,9 @@ namespace ApiCrochbet.Controllers
 
 
 
-        [HttpDelete("[action]")]
+        [HttpDelete("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult> deleteResenas([FromBody] modelos.resena res)
+        public async Task<ActionResult> deleteResenas([FromBody] modelos.resena res,int id)
         {
 
             try
@@ -152,7 +152,7 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
-
+                res.idResena = id;
                 nameProcedure = NameStoreProcedure.SPborrarResena;
                 //user.idUsuario = id.ToString();
                 XDocument xml = Shared.DBXmlMethods.GetXml(res);

@@ -179,9 +179,9 @@ namespace ApiCrochbet.Controllers
 
 
 
-        [HttpDelete("[action]")]
+        [HttpDelete("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult> deleteClientes([FromBody] modelos.cliente client)
+        public async Task<ActionResult> deleteClientes([FromBody] modelos.cliente client,int id)
         {
 
             try
@@ -191,7 +191,7 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
-
+                client.idCliente = id;
                 nameProcedure = NameStoreProcedure.SPborrarCliente;
                 //product.idUsuario = id.ToString();
                 XDocument xml = Shared.DBXmlMethods.GetXml(client);

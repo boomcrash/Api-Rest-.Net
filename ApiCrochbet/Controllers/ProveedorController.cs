@@ -12,9 +12,9 @@ namespace ApiCrochbet.Controllers
     public class ProveedorController : Controller
     {
 
-        [HttpPost("[action]")]
+        [HttpPost("[action]/{id}")]
         //[Route("verificar")]
-        public async Task<ActionResult<modelos.proveedor>> getProveedores(modelos.proveedor prov)
+        public async Task<ActionResult<modelos.proveedor>> getProveedores(modelos.proveedor prov,int id)
         {
 
             try
@@ -24,7 +24,7 @@ namespace ApiCrochbet.Controllers
                .Build().GetSection("ConnectionStrings")["Conexion"];
 
                 string nameProcedure = "";
-
+                prov.idProveedor = id;
                 nameProcedure = NameStoreProcedure.SPconsultarProveedores;
                 //user.idUsuario = id.ToString();
                 XDocument xml = Shared.DBXmlMethods.GetXml(prov);
